@@ -31,4 +31,6 @@ Pokemon can be sorted by pokedex number, stats, or thumbs up count.
     
 ## Wireframes - Figma
 
+![Poke-view Figma hi-fid](https://github.com/user-attachments/assets/42474a50-b425-4d5f-abba-3fc1f91d4ded)
+
 ## Trello
