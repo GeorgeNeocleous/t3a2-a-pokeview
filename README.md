@@ -21,7 +21,7 @@ See almost all available sprites accessed through the Pokemon API, to see how th
 ## Target Audience
 - The target audience of this web application will be for casual Pokemon fans, Pokemon enthusiasts and newcomers to Pokemon. It is designed to be simple, easy to explore and to find different pokemon.
 
-![The website color pallete](./Color%20Pallete.JPG)
+![The website color pallete](./docs/Color%20Pallete.JPG)
 
 - This color pallete was chosen due to its similarity to a Poke-Centre
 
@@ -30,7 +30,7 @@ See almost all available sprites accessed through the Pokemon API, to see how th
 The navigation bar is present across all pages.
 Comparison page, My List, Login, Home, Home (ordered by likes) etc.. can be navigated to by any page.
 
-![Dataflow diagram with the relationship of each web-page](./Dataflow%20Diagram.JPG)
+![Dataflow diagram with the relationship of each web-page](./docs/Dataflow%20Diagram.JPG)
 
 - Yellow/orange boxes represent pages that require a user login for full functionality. Plain white boxes/grey represent single web pages accessible by regular visitors that have no significantly diminished functionality as a guest user. Home is green so that it stands out - relatively.
 
@@ -41,14 +41,14 @@ Comparison page, My List, Login, Home, Home (ordered by likes) etc.. can be navi
 - Login will allow users to login with their accounts but also give a potential user access to the register page (Login has a link to the registration page and the registration page has a link to the login page).
 - The sprite view page is only accessible through the Individual Pokemon page.
 
-![Dataflow diagram - login/register and the user database ](./Dataflow%20Diagram%20(User%20verification).JPG)
+![Dataflow diagram - login/register and the user database ](./docs/Dataflow%20Diagram%20(User%20verification).JPG)
 
 - A new user will enter their proposed email, password and username. If these are valid values eg. valid email, password is not too short, username contains no profanity etc... then they are passed into the user database for secure storage.
 - A user will then use the login page. This data will be passed to the database and checked for a match. If there is no match there were will be an error and a return to the login page re-prompting the user for their details.
 - If there is a successful match then the database will return a JWT to the user.
 
 ## Application Architecture Diagram
-![A diagram to show the app architecture](./App%20architecture.JPG)
+![A diagram to show the app architecture](./docs/App%20architecture.JPG)
 
 ## User Stories
 
@@ -82,51 +82,51 @@ Comparison page, My List, Login, Home, Home (ordered by likes) etc.. can be navi
 - User stories evolved over time and were refined to a degree. 
 
 1st iteration
-![User stories 1](./User%20stories%201.JPG)
+![User stories 1](./docs/User%20stories%201.JPG)
 
 Final iteration
-![User stories 2](./User%20stories%202.JPG)
-![User stories 2](./User%20stories%202.1.JPG)
+![User stories 2](./docs/User%20stories%202.JPG)
+![User stories 2](./docs/User%20stories%202.1.JPG)
 
 ## Wireframes - Figma
 
-![All wireframe pages - desktop views](./Poke-view%20Figma%20hi-fid.JPG)
+![All wireframe pages - desktop views](./docs/Poke-view%20Figma%20hi-fid.JPG)
 
 - This application is limited to desktop view for the moment but will be able to be expanded in the future.
 
-![Wireframe - Homepage](./Poke-view%20Default.JPG)
+![Wireframe - Homepage](./docs/Poke-view%20Default.JPG)
 
 - The homepage contains cards, each representing an individual pokemon. By default, these are to be ordered by Pokedex number (1.Bulbasaur, 2.Ivysaur, 3.Venasaur, 4.Charmander...)
 - In the navigation bar (barring the home link), there is "Compare", "Most Popular" and "My List". Additionally, there is a search bar which allows a user to find a Pokemon by Pokedex number, name or by type (yet to decide if it's necessary with the existence of the type filtering)
 
-![Wireframe - Homepage (sorted by most likes)](./Poke-view%20Home%20(Sorting%20by%20most%20liked).JPG)
+![Wireframe - Homepage (sorted by most likes)](./docs/Poke-view%20Home%20(Sorting%20by%20most%20liked).JPG)
 
 - With a button, (yet to be added) users will be able to sort these cards by Pokedex number and like count (popularity). 
 
 - The types menu on the right side will allow a user to select for types. If a user clicks on "Fire" only Pokemon that are fire-type will be shown on the page. It will be possible to reset this with a button (yet to be included).
 
 
-![Wireframe - Single Pokemon page](./Poke-view%20Pokemon%20single%20page.JPG)
+![Wireframe - Single Pokemon page](./docs/Poke-view%20Pokemon%20single%20page.JPG)
 
 - Clicking on a specific Pokemon on the Page will take the user to an individual Pokemon page.
 
-![Wireframe - Sprite view for a single Pokemon](./Poke-view%20Pokemon%20sprite%20view.JPG)
+![Wireframe - Sprite view for a single Pokemon](./docs/Poke-view%20Pokemon%20sprite%20view.JPG)
 
 - When in the individual Pokemon page, a user will have a sprite view option. When clicked it will navigate the user to the sprite page for said pokemon and the page will be populated by almost all sprites available through Pokemon API (From 1st generation sprites to current)
 
-![Wireframe - Comparison page](./Poke-view%20Comparison.JPG)
+![Wireframe - Comparison page](./docs/Poke-view%20Comparison.JPG)
 
 - "Compare" will navigate the user to the comparison page. This will allow users to select different Pokemon to allow a side by side comparison (In statistics and design)
 
-![Wireframe - My List page](./Poke-view%20My%20List.JPG)
+![Wireframe - My List page](./docs/Poke-view%20My%20List.JPG)
 
 - "My List" is a page that will contain all the Pokemon that have been saved by the user. To allow for easy access and remembering their selection.
 - Anywhere there is a Pokemon card, the user will see a thumbs up button, if that is clicked, then the pokemon card will now populate their "My List" page.
 
-![Wireframe - Login page](./Poke-view%20Login.JPG)
+![Wireframe - Login page](./docs/Poke-view%20Login.JPG)
 - Login is accessible by the "Login/Register" link on the right of the nav bar. A new user can navigate to the register page by clicking the register link or conversly the Login card will also have a prompt to "Create account", this will also link to the "Register" page.
 
-![Wireframe - Create user/register page](./Poke-view%20Register.JPG)
+![Wireframe - Create user/register page](./docs/Poke-view%20Register.JPG)
 
 - The intention will also be that if a guest user attempts to complete an action that requires a login, then they will be prompted and redirected to login/register an account.
 
@@ -139,28 +139,28 @@ Final iteration
 
 - The images below show how some of these tasks are split and how an iterative approach was utilised to complete this stage of the project using kanban.
 
-![Trello - The initial setup for Trello before work has begun](./Trello%20board%20(Kanban).JPG)
+![Trello - The initial setup for Trello before work has begun](./docs/Trello%20board%20(Kanban).JPG)
 
-![Trello - Description of your website card (tasks)](./R1%20-%20Description%20of%20your%20website.JPG)
+![Trello - Description of your website card (tasks)](./docs/R1%20-%20Description%20of%20your%20website.JPG)
 
-![Trello - User stories card (tasks)](./R4%20-%20User%20stories.JPG)
-
-
-
-![Trello - Total view, most cards are in progress](./Trello%20board%20(Kanban)%20(In-progress).JPG)
-
-![Trello - User stories card (tasks 50% complete)](./R4%20-%20User%20stories%20(DOING).JPG)
-
-![Trello - Wireframes card (tasks 50% completed)](./R5%20-%20Wireframes.JPG)
+![Trello - User stories card (tasks)](./docs/R4%20-%20User%20stories.JPG)
 
 
 
-![![Trello - board view, all cards in progress or completed (1)](./R5%20-%20Wireframes.JPG)](./Trello%20board%20(Kanban)%20(In-progress%202).JPG)
+![Trello - Total view, most cards are in progress](./docs/Trello%20board%20(Kanban)%20(In-progress).JPG)
 
-![Trello - board view, all cards in progress or completed (2)](./Trello%20board%20(Kanban)%20(In-progress%203).JPG)
+![Trello - User stories card (tasks 50% complete)](./docs/R4%20-%20User%20stories%20(DOING).JPG)
 
-![Trello - board view, all cards in progress or completed (3)](./Trello%20board%20(Kanban)%20(In-progress%204).JPG)
+![Trello - Wireframes card (tasks 50% completed)](./docs/R5%20-%20Wireframes.JPG)
 
-![Trello - board view, all cards completed](./Trello%20board%20(Kanban)%20finished.JPG)
+
+
+![![Trello - board view, all cards in progress or completed (1)]](./docs/Trello%20board%20(Kanban)%20(In-progress%202).JPG)
+
+![Trello - board view, all cards in progress or completed (2)](./docs/Trello%20board%20(Kanban)%20(In-progress%203).JPG)
+
+![Trello - board view, all cards in progress or completed (3)](./docs/Trello%20board%20(Kanban)%20(In-progress%204).JPG)
+
+![Trello - board view, all cards completed](./docs/Trello%20board%20(Kanban)%20finished.JPG)
 
 
