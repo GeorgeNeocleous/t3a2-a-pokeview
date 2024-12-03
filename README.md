@@ -1,6 +1,8 @@
 # t3a2-a-pokeview
 Full-Stack Web App part A - A place for Pokemon enthusiasts/trainers to review and rate their favorite Pokemon.
 
+https://github.com/GeorgeNeocleous/t3a2-a-pokeview
+
 ## Purpose
 - The purpose of this web application is to provide users/visitors with a cool space to appreciate 1st generation Pokemon. Visitors will also be able to observe the popularity of Pokemon - voted by the user base or create a list of Pokemon for whatever reason they please whether it is favourite Pokemon, Pokemon they've caught in game, or Pokemon they just like the look of.
 - Make a list of Pokemon which could reflect the Pokemon they have caught or Pokemon they want to find or just have a general interest in. 
