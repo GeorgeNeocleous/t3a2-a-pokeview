@@ -77,6 +77,15 @@ Comparison page, My List, Login, Home, Home (ordered by likes) etc.. can be navi
 ### User story 3: 
 - As a game developer/designer, I would like to see the different graphical designs/sprites of Pokemon and how they've changed as new games have come out, so that I can gain insight on what made them so great and memorable.
 
+- User stories evolved over time and were refined to a degree. 
+
+1st iteration
+![User stories 1](./User%20stories%201.JPG)
+
+Final iteration
+![User stories 2](./User%20stories%202.JPG)
+![User stories 2](./User%20stories%202.1.JPG)
+
 ## Wireframes - Figma
 
 ![All wireframe pages - desktop views](./Poke-view%20Figma%20hi-fid.JPG)
