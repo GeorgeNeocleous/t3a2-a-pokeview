@@ -16,17 +16,19 @@ See almost all available sprites accessed through the Pokemon API, to see how th
 - Look at how a specific pokemons sprites have been designed over different games
 - Create a user account to allow authorisation to features such as building a list and liking pokemon
 
-![Poke-view Figma hi-fid](./Color%20Pallete.JPG)
+## Target Audience
+- The target audience of this web application will be for casual Pokemon fans, Pokemon enthusiasts and newcomers to Pokemon. It is designed to be simple, easy to explore and to find different pokemon.
+
+![The website color pallete](./Color%20Pallete.JPG)
 
 - This color pallete was chosen due to its similarity to a Poke-Centre
 
 ## Dataflow Diagram
 
-### Site map
 The navigation bar is present across all pages.
 Comparison page, My List, Login, Home, Home (ordered by likes) etc.. can be navigated to by any page.
 
-![Poke-view Figma hi-fid](./Dataflow%20Diagram.JPG)
+![Dataflow diagram with the relationship of each web-page](./Dataflow%20Diagram.JPG)
 
 - Yellow/orange boxes represent pages that require a user login for full functionality. Plain white boxes/grey represent single web pages accessible by regular visitors that have no significantly diminished functionality as a guest user. Home is green so that it stands out - relatively.
 
@@ -37,14 +39,14 @@ Comparison page, My List, Login, Home, Home (ordered by likes) etc.. can be navi
 - Login will allow users to login with their accounts but also give a potential user access to the register page (Login has a link to the registration page and the registration page has a link to the login page).
 - The sprite view page is only accessible through the Individual Pokemon page.
 
-![Poke-view Figma hi-fid](./Dataflow%20Diagram%20(User%20verification).JPG)
+![Dataflow diagram - login/register and the user database ](./Dataflow%20Diagram%20(User%20verification).JPG)
 
 - A new user will enter their proposed email, password and username. If these are valid values eg. valid email, password is not too short, username contains no profanity etc... then they are passed into the user database for secure storage.
 - A user will then use the login page. This data will be passed to the database and checked for a match. If there is no match there were will be an error and a return to the login page re-prompting the user for their details.
 - If there is a successful match then the database will return a JWT to the user.
 
 ## Application Architecture Diagram
-
+![A diagram to show the app architecture](./App%20architecture.JPG)
 
 ## User Stories
 
@@ -77,73 +79,77 @@ Comparison page, My List, Login, Home, Home (ordered by likes) etc.. can be navi
 
 ## Wireframes - Figma
 
-![Poke-view Figma hi-fid](./Poke-view%20Figma%20hi-fid.JPG)
+![All wireframe pages - desktop views](./Poke-view%20Figma%20hi-fid.JPG)
 
 - This application is limited to desktop view for the moment but will be able to be expanded in the future.
 
-![Poke-view Figma hi-fid](./Poke-view%20Default.JPG)
+![Wireframe - Homepage](./Poke-view%20Default.JPG)
 
 - The homepage contains cards, each representing an individual pokemon. By default, these are to be ordered by Pokedex number (1.Bulbasaur, 2.Ivysaur, 3.Venasaur, 4.Charmander...)
+- In the navigation bar (barring the home link), there is "Compare", "Most Popular" and "My List". Additionally, there is a search bar which allows a user to find a Pokemon by Pokedex number, name or by type (yet to decide if it's necessary with the existence of the type filtering)
 
-![Poke-view Figma hi-fid](./Poke-view%20Home%20(Sorting%20by%20most%20liked).JPG)
+![Wireframe - Homepage (sorted by most likes)](./Poke-view%20Home%20(Sorting%20by%20most%20liked).JPG)
 
 - With a button, (yet to be added) users will be able to sort these cards by Pokedex number and like count (popularity). 
 
 - The types menu on the right side will allow a user to select for types. If a user clicks on "Fire" only Pokemon that are fire-type will be shown on the page. It will be possible to reset this with a button (yet to be included).
 
 
-![Poke-view Figma hi-fid](./Poke-view%20Pokemon%20single%20page.JPG)
+![Wireframe - Single Pokemon page](./Poke-view%20Pokemon%20single%20page.JPG)
 
 - Clicking on a specific Pokemon on the Page will take the user to an individual Pokemon page.
 
-- In the navigation bar (barring the home link), there is "Compare", "Most Popular" and "My List". 
+![Wireframe - Sprite view for a single Pokemon](./Poke-view%20Pokemon%20sprite%20view.JPG)
 
-- Compare will navigate the user to the comparison page. This will allow users to select different Pokemon to allow a side by side comparison (In statistics and design)
+- When in the individual Pokemon page, a user will have a sprite view option. When clicked it will navigate the user to the sprite page for said pokemon and the page will be populated by almost all sprites available through Pokemon API (From 1st generation sprites to current)
 
-![Poke-view Figma hi-fid](./Poke-view%20Comparison.JPG)
+![Wireframe - Comparison page](./Poke-view%20Comparison.JPG)
 
-- 
+- "Compare" will navigate the user to the comparison page. This will allow users to select different Pokemon to allow a side by side comparison (In statistics and design)
+
+![Wireframe - My List page](./Poke-view%20My%20List.JPG)
+
+- "My List" is a page that will contain all the Pokemon that have been saved by the user. To allow for easy access and remembering their selection.
+- Anywhere there is a Pokemon card, the user will see a thumbs up button, if that is clicked, then the pokemon card will now populate their "My List" page.
+
+![Wireframe - Login page](./Poke-view%20Login.JPG)
+- Login is accessible by the "Login/Register" link on the right of the nav bar. A new user can navigate to the register page by clicking the register link or conversly the Login card will also have a prompt to "Create account", this will also link to the "Register" page.
+
+![Wireframe - Create user/register page](./Poke-view%20Register.JPG)
+
+- The intention will also be that if a guest user attempts to complete an action that requires a login, then they will be prompted and redirected to login/register an account.
 
 
-
-
-![Poke-view Figma hi-fid](./Poke-view%20Pokemon%20sprite%20view.JPG)
-
-
-
-![Poke-view Figma hi-fid](./Poke-view%20My%20List.JPG)
-
-![Poke-view Figma hi-fid](./Poke-view%20Login.JPG)
-
-![Poke-view Figma hi-fid](./Poke-view%20Register.JPG)
 
 ## Trello
 
-![Poke-view Figma hi-fid](./Trello%20board%20(Kanban).JPG)
+- A green color represents an easy task, yellow is medium and orange is hard (in terms of effort - just more involved not necessarily "hard"). Green and yellow denotes something in-between the two. 
+- Tasks were sorted by requirements and broken down into smaller tasks, such as user story 1, persona 1.
 
-![Poke-view Figma hi-fid](./R1%20-%20Description%20of%20your%20website.JPG)
+- The images below show how some of these tasks are split and how an iterative approach was utilised to complete this stage of the project using kanban.
 
-![Poke-view Figma hi-fid](./R4%20-%20User%20stories.JPG)
+![Trello - The initial setup for Trello before work has begun](./Trello%20board%20(Kanban).JPG)
 
-![Poke-view Figma hi-fid](./R5%20-%20Wireframes.JPG)
+![Trello - Description of your website card (tasks)](./R1%20-%20Description%20of%20your%20website.JPG)
 
-
-
-![Poke-view Figma hi-fid](./Trello%20board%20(Kanban)%20(In-progress).JPG)
-
-![Poke-view Figma hi-fid](./R4%20-%20User%20stories%20(DOING).JPG)
-
-![Poke-view Figma hi-fid](./R5%20-%20Wireframes%20(DOING).JPG)
+![Trello - User stories card (tasks)](./R4%20-%20User%20stories.JPG)
 
 
 
+![Trello - Total view, most cards are in progress](./Trello%20board%20(Kanban)%20(In-progress).JPG)
 
-![Poke-view Figma hi-fid](./Trello%20board%20(Kanban)%20(In-progress%202).JPG)
+![Trello - User stories card (tasks 50% complete)](./R4%20-%20User%20stories%20(DOING).JPG)
 
-![Poke-view Figma hi-fid](./Trello%20board%20(Kanban)%20(In-progress%203).JPG)
+![Trello - Wireframes card (tasks 50% completed)](./R5%20-%20Wireframes.JPG)
 
-![Poke-view Figma hi-fid](./Trello%20board%20(Kanban)%20(In-progress%204).JPG)
 
-![Poke-view Figma hi-fid](./Trello%20board%20(Kanban)%20finished.JPG)
+
+![![Trello - board view, all cards in progress or completed (1)](./R5%20-%20Wireframes.JPG)](./Trello%20board%20(Kanban)%20(In-progress%202).JPG)
+
+![Trello - board view, all cards in progress or completed (2)](./Trello%20board%20(Kanban)%20(In-progress%203).JPG)
+
+![Trello - board view, all cards in progress or completed (3)](./Trello%20board%20(Kanban)%20(In-progress%204).JPG)
+
+![Trello - board view, all cards completed](./Trello%20board%20(Kanban)%20finished.JPG)
 
 
